@@ -9,13 +9,27 @@
 /* Begin PBXBuildFile section */
 		3C08A6FD28121BF5008FF1C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A6FC28121BF5008FF1C6 /* AppDelegate.swift */; };
 		3C08A6FF28121BF5008FF1C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A6FE28121BF5008FF1C6 /* SceneDelegate.swift */; };
-		3C08A70128121BF5008FF1C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A70028121BF5008FF1C6 /* ViewController.swift */; };
 		3C08A70428121BF5008FF1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C08A70228121BF5008FF1C6 /* Main.storyboard */; };
 		3C08A70628121BF6008FF1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C08A70528121BF6008FF1C6 /* Assets.xcassets */; };
 		3C08A70928121BF6008FF1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C08A70728121BF6008FF1C6 /* LaunchScreen.storyboard */; };
-		3C08A71428121BF7008FF1C6 /* NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A71328121BF7008FF1C6 /* NewsTests.swift */; };
 		3C08A71E28121BF7008FF1C6 /* NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A71D28121BF7008FF1C6 /* NewsUITests.swift */; };
 		3C08A72028121BF7008FF1C6 /* NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A71F28121BF7008FF1C6 /* NewsUITestsLaunchTests.swift */; };
+		3C08F41F28197D3000FB7DAA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F41E28197D3000FB7DAA /* AppConstants.swift */; };
+		3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4202819806100FB7DAA /* WebRoutes.swift */; };
+		3C08F423281986ED00FB7DAA /* WebRoutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */; };
+		3C08F4242819880400FB7DAA /* WebRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4202819806100FB7DAA /* WebRoutes.swift */; };
+		3C08F4262819BFB600FB7DAA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4252819BFB600FB7DAA /* WebViewController.swift */; };
+		3C08F42A2819C1DA00FB7DAA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4292819C1DA00FB7DAA /* PageViewController.swift */; };
+		3C08F42C2819E32000FB7DAA /* WebViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F42B2819E32000FB7DAA /* WebViewControllerFactory.swift */; };
+		3C08F4322819FBB600FB7DAA /* enableDarkMode.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C08F4312819FBB600FB7DAA /* enableDarkMode.js */; };
+		3C08F434281A098900FB7DAA /* disableDarkMode.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C08F433281A098900FB7DAA /* disableDarkMode.js */; };
+		3C08F436281A14DB00FB7DAA /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */; };
+		3C08F43A281A182500FB7DAA /* ProfileNavigationControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */; };
+		3C08F43C281A195200FB7DAA /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */; };
+		3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */; };
+		3C32CB3A2818B7D7007045EA /* restyle.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C32CB392818B7D7007045EA /* restyle.js */; };
+		3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C32CB422818BC18007045EA /* WebViewFactory.swift */; };
+		3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB571172816F7400038E482 /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +53,29 @@
 		3C08A6F928121BF5008FF1C6 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C08A6FC28121BF5008FF1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C08A6FE28121BF5008FF1C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C08A70028121BF5008FF1C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C08A70328121BF5008FF1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C08A70528121BF6008FF1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C08A70828121BF6008FF1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C08A70A28121BF6008FF1C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C08A70F28121BF7008FF1C6 /* NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C08A71328121BF7008FF1C6 /* NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTests.swift; sourceTree = "<group>"; };
 		3C08A71928121BF7008FF1C6 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C08A71D28121BF7008FF1C6 /* NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITests.swift; sourceTree = "<group>"; };
 		3C08A71F28121BF7008FF1C6 /* NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3C08F41E28197D3000FB7DAA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		3C08F4202819806100FB7DAA /* WebRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRoutes.swift; sourceTree = "<group>"; };
+		3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRoutesTests.swift; sourceTree = "<group>"; };
+		3C08F4252819BFB600FB7DAA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3C08F4292819C1DA00FB7DAA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		3C08F42B2819E32000FB7DAA /* WebViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerFactory.swift; sourceTree = "<group>"; };
+		3C08F4312819FBB600FB7DAA /* enableDarkMode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = enableDarkMode.js; sourceTree = "<group>"; };
+		3C08F433281A098900FB7DAA /* disableDarkMode.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = disableDarkMode.js; sourceTree = "<group>"; };
+		3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationControllerFactory.swift; sourceTree = "<group>"; };
+		3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		3C32CB392818B7D7007045EA /* restyle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = restyle.js; sourceTree = "<group>"; };
+		3C32CB422818BC18007045EA /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
+		3CB571172816F7400038E482 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +128,11 @@
 			children = (
 				3C08A6FC28121BF5008FF1C6 /* AppDelegate.swift */,
 				3C08A6FE28121BF5008FF1C6 /* SceneDelegate.swift */,
-				3C08A70028121BF5008FF1C6 /* ViewController.swift */,
-				3C08A70228121BF5008FF1C6 /* Main.storyboard */,
-				3C08A70528121BF6008FF1C6 /* Assets.xcassets */,
-				3C08A70728121BF6008FF1C6 /* LaunchScreen.storyboard */,
-				3C08A70A28121BF6008FF1C6 /* Info.plist */,
+				3C08F41E28197D3000FB7DAA /* AppConstants.swift */,
+				3C2C8AA52818B1510040F604 /* Main */,
+				3C08F438281A17FD00FB7DAA /* Profile */,
+				3C08F437281A14E000FB7DAA /* Common */,
+				3C2C8AA42818B12A0040F604 /* Resources */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -113,7 +140,7 @@
 		3C08A71228121BF7008FF1C6 /* NewsTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C08A71328121BF7008FF1C6 /* NewsTests.swift */,
+				3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */,
 			);
 			path = NewsTests;
 			sourceTree = "<group>";
@@ -125,6 +152,51 @@
 				3C08A71F28121BF7008FF1C6 /* NewsUITestsLaunchTests.swift */,
 			);
 			path = NewsUITests;
+			sourceTree = "<group>";
+		};
+		3C08F437281A14E000FB7DAA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3C08F438281A17FD00FB7DAA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */,
+				3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */,
+				3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3C2C8AA42818B12A0040F604 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C08A70228121BF5008FF1C6 /* Main.storyboard */,
+				3C08A70728121BF6008FF1C6 /* LaunchScreen.storyboard */,
+				3C08A70528121BF6008FF1C6 /* Assets.xcassets */,
+				3C32CB392818B7D7007045EA /* restyle.js */,
+				3C08F4312819FBB600FB7DAA /* enableDarkMode.js */,
+				3C08F433281A098900FB7DAA /* disableDarkMode.js */,
+				3C08A70A28121BF6008FF1C6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C2C8AA52818B1510040F604 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3CB571172816F7400038E482 /* NavigationViewController.swift */,
+				3C08F4292819C1DA00FB7DAA /* PageViewController.swift */,
+				3C08F4252819BFB600FB7DAA /* WebViewController.swift */,
+				3C32CB422818BC18007045EA /* WebViewFactory.swift */,
+				3C08F42B2819E32000FB7DAA /* WebViewControllerFactory.swift */,
+				3C08F4202819806100FB7DAA /* WebRoutes.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C08A70928121BF6008FF1C6 /* LaunchScreen.storyboard in Resources */,
+				3C32CB3A2818B7D7007045EA /* restyle.js in Resources */,
+				3C08F434281A098900FB7DAA /* disableDarkMode.js in Resources */,
+				3C08F4322819FBB600FB7DAA /* enableDarkMode.js in Resources */,
 				3C08A70628121BF6008FF1C6 /* Assets.xcassets in Resources */,
 				3C08A70428121BF5008FF1C6 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +333,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C08A70128121BF5008FF1C6 /* ViewController.swift in Sources */,
+				3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */,
+				3C08F41F28197D3000FB7DAA /* AppConstants.swift in Sources */,
+				3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */,
 				3C08A6FD28121BF5008FF1C6 /* AppDelegate.swift in Sources */,
 				3C08A6FF28121BF5008FF1C6 /* SceneDelegate.swift in Sources */,
+				3C08F436281A14DB00FB7DAA /* PostTableViewController.swift in Sources */,
+				3C08F42C2819E32000FB7DAA /* WebViewControllerFactory.swift in Sources */,
+				3C08F43C281A195200FB7DAA /* ProfileNavigationController.swift in Sources */,
+				3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */,
+				3C08F42A2819C1DA00FB7DAA /* PageViewController.swift in Sources */,
+				3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */,
+				3C08F43A281A182500FB7DAA /* ProfileNavigationControllerFactory.swift in Sources */,
+				3C08F4262819BFB600FB7DAA /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C08A71428121BF7008FF1C6 /* NewsTests.swift in Sources */,
+				3C08F4242819880400FB7DAA /* WebRoutes.swift in Sources */,
+				3C08F423281986ED00FB7DAA /* WebRoutesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +525,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6Q2QQSG2W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = News/Info.plist;
+				INFOPLIST_FILE = News/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +553,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F6Q2QQSG2W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = News/Info.plist;
+				INFOPLIST_FILE = News/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

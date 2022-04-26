@@ -1,14 +1,15 @@
 //
-//  NewsTests.swift
+//  WebRoutesTests.swift
 //  NewsTests
 //
-//  Created by Ian Grünig on 22.04.22.
+//  Created by Ian Grünig on 26.04.22.
 //
 
 import XCTest
+
 @testable import News
 
-class NewsTests: XCTestCase {
+class WebRoutesTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,12 +19,15 @@ class NewsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testTagURL_FirstTag_ReturnsURLForFirstTag() throws {
+        // given
+        let tag = WebRoutes.tags[0]
+        
+        // when
+        let url = WebRoutes.urlForTag(tag)
+        
+        // then
+        XCTAssertEqual(url!.absoluteString, "https://mb21.github.io/blog/tags/\(tag)")
     }
 
     func testPerformanceExample() throws {
