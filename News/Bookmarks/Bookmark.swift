@@ -7,9 +7,13 @@
 
 import Foundation
 
-struct Bookmark: Codable {
+struct Bookmark: Codable, Equatable {
     let id: Int
     let title: String
     let url: URL
     let createdAt: Date
+    
+    static func ==(lhs: Bookmark, rhs: Bookmark) -> Bool {
+        return lhs.url == rhs.url
+    }
 }
