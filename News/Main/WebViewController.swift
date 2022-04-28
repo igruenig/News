@@ -34,11 +34,23 @@ class WebViewController: UIViewController {
         updateWebViewAppearance()
     }
     
+    @objc func bookmarkPost(_ sender: Any) {
+        
+    }
+    
     private func updateWebViewAppearance() {
         if traitCollection.userInterfaceStyle == .dark {
             webView.evaluateJavaScript(WebViewFactory.loadScriptString(scriptName: "enableDarkMode")!)
         } else {
             webView.evaluateJavaScript(WebViewFactory.loadScriptString(scriptName: "disableDarkMode")!)
+        }
+    }
+    
+    private func updateNavigationBar() {
+        if let url = webView.url, url.pathComponents.count > 2, url.pathComponents[2] != "tags" {
+            let bookmarkButton = UIBarButtonItem(image: UIImage(systemName: "bookmark"), style: .plain, target: self, action: #selector(bookmarkPost(_:)))
+            bookmarkButton.tintColor = .label
+            parent?.navigationItem.leftBarButtonItem = bookmarkButton
         }
     }
 }
@@ -47,6 +59,7 @@ extension WebViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         updateWebViewAppearance()
+        updateNavigationBar()
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
