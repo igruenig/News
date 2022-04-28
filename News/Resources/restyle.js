@@ -47,7 +47,7 @@ if (footer) {
     footer.remove();
 }
 
-//
+// remove site title
 var siteTitle = document.querySelector('.site-title');
 if (siteTitle) {
     siteTitle.href = '#';
