@@ -29,6 +29,7 @@ class PageViewController: UIPageViewController {
         setViewControllers([webViewControllers[0]], direction: .forward, animated: false)
         
         setupNavigationBar()
+        webViewControllers[0].setupNavigationBar()
     }
     
     private func setupNavigationBar() {
@@ -38,10 +39,6 @@ class PageViewController: UIPageViewController {
         profileButton.tintColor = .label
         
         navigationItem.rightBarButtonItems = [profileButton]
-        
-        let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: nil, action: nil)
-        readingListButton.tintColor = .label
-        navigationItem.leftBarButtonItems = [readingListButton]
     }
 }
 

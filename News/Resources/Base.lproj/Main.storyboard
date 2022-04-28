@@ -244,6 +244,7 @@
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ihh-tn-54c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lH2-0I-mMt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="cZu-xW-DK8"/>
@@ -252,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="-667" y="133"/>
         </scene>
-        <!--Navigation View Controller-->
+        <!--Main Navigation View Controller-->
         <scene sceneID="SCb-qp-V7v">
             <objects>
-                <navigationController storyboardIdentifier="NavigationViewController" hidesBarsOnTap="YES" id="eTs-Dj-8Og" customClass="NavigationViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationViewController" hidesBarsOnTap="YES" id="eTs-Dj-8Og" customClass="MainNavigationViewController" customModule="News" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bOX-aP-k7V">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

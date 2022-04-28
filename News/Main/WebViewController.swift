@@ -47,6 +47,30 @@ class WebViewController: UIViewController {
         startURL = url
     }
     
+    func setupNavigationBar() {
+        if let url = webView.url, url.pathComponents.count > 2, url.pathComponents[2] != "tags" {
+            // home button
+            let tagHomeButton = UIBarButtonItem(image: UIImage(systemName: "house"), style: .plain, target: self, action: #selector(homePressed(_:)))
+            tagHomeButton.tintColor = .label
+            
+            // bookmark button
+            var systemName = "bookmark"
+            if bookmarkController.isBookmarked(url.absoluteString) {
+                systemName = "bookmark.fill"
+            }
+            
+            let bookmarkButton = UIBarButtonItem(image: UIImage(systemName: systemName), style: .plain, target: self, action: #selector(bookmarkPressed(_:)))
+            bookmarkButton.tintColor = .label
+            
+            parent?.navigationItem.leftBarButtonItems = [tagHomeButton, bookmarkButton]
+        } else {
+            let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: self, action: #selector(readingListPressed(_:)))
+            readingListButton.tintColor = .label
+            
+            parent?.navigationItem.leftBarButtonItems = [readingListButton]
+        }
+    }
+    
     @objc func bookmarkPressed(_ sender: Any) {
         if let url = webView.url, let title = webView.title {
             if bookmarkController.isBookmarked(url.absoluteString) {
@@ -54,7 +78,7 @@ class WebViewController: UIViewController {
             } else {
                saveBookmark(url, title: title)
             }
-            updateNavigationBar()
+            setupNavigationBar()
         }
     }
     
@@ -67,6 +91,7 @@ class WebViewController: UIViewController {
     @objc func readingListPressed(_ sender: Any) {
         // TODO: Show reading list instead of bookmarks
         let vc = ViewControllerFactory.makeViewController(identifier: "BookmarksNavigationController") as! UINavigationController
+        vc.viewControllers[0].navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: nil, action: #selector(UINavigationController.dismiss(_:)))
         navigationController?.present(vc, animated: true)
     }
     
@@ -97,37 +122,13 @@ class WebViewController: UIViewController {
             webView.evaluateJavaScript(WebViewFactory.loadScriptString(scriptName: "disableDarkMode")!)
         }
     }
-    
-    private func updateNavigationBar() {
-        if let url = webView.url, url.pathComponents.count > 2, url.pathComponents[2] != "tags" {
-            // home button
-            let tagHomeButton = UIBarButtonItem(image: UIImage(systemName: "house"), style: .plain, target: self, action: #selector(homePressed(_:)))
-            tagHomeButton.tintColor = .label
-            
-            // bookmark button
-            var systemName = "bookmark"
-            if bookmarkController.isBookmarked(url.absoluteString) {
-                systemName = "bookmark.fill"
-            }
-            
-            let bookmarkButton = UIBarButtonItem(image: UIImage(systemName: systemName), style: .plain, target: self, action: #selector(bookmarkPressed(_:)))
-            bookmarkButton.tintColor = .label
-            
-            parent?.navigationItem.leftBarButtonItems = [tagHomeButton, bookmarkButton]
-        } else {
-            let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: self, action: #selector(readingListPressed(_:)))
-            readingListButton.tintColor = .label
-            
-            parent?.navigationItem.leftBarButtonItems = [readingListButton]
-        }
-    }
 }
 
 extension WebViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         updateWebViewAppearance()
-        updateNavigationBar()
+        setupNavigationBar()
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {

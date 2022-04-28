@@ -29,14 +29,14 @@ class LaunchViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let navVC = ViewControllerFactory.makeViewController(identifier: "NavigationViewController") as! NavigationViewController
+        let navVC = ViewControllerFactory.makeViewController(identifier: "MainNavigationViewController") as! MainNavigationViewController
         
         DispatchQueue.main.asyncAfter(deadline: .now()+1.5, execute: { [weak self] in
             self?.animate(vc: navVC)
         })
     }
     
-    private func animate(vc: NavigationViewController) {
+    private func animate(vc: MainNavigationViewController) {
         UIView.animate(withDuration: 0.8, animations: { [weak self] in
             guard let this = self else {
                 return

@@ -26,7 +26,7 @@
 		3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */; };
 		3C32CB3A2818B7D7007045EA /* restyle.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C32CB392818B7D7007045EA /* restyle.js */; };
 		3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C32CB422818BC18007045EA /* WebViewFactory.swift */; };
-		3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB571172816F7400038E482 /* NavigationViewController.swift */; };
+		3CB571182816F7400038E482 /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB571172816F7400038E482 /* MainNavigationViewController.swift */; };
 		3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502B281A7D0B0033927F /* BookmarkController.swift */; };
 		3CD65030281A7F220033927F /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502F281A7F220033927F /* Bookmark.swift */; };
 		3CD6503A281A84D00033927F /* SimpleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65039281A84D00033927F /* SimpleStorage.swift */; };
@@ -40,6 +40,7 @@
 		3CD6504B281AAED20033927F /* SimpleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65039281A84D00033927F /* SimpleStorage.swift */; };
 		3CD6504D281AB0C10033927F /* MockBookmarkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6504C281AB0C10033927F /* MockBookmarkFactory.swift */; };
 		3CD6504F281ACE990033927F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6504E281ACE990033927F /* LaunchViewController.swift */; };
+		3CD65053281ADBB90033927F /* NavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65052281ADBB90033927F /* NavigationControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +83,7 @@
 		3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3C32CB392818B7D7007045EA /* restyle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = restyle.js; sourceTree = "<group>"; };
 		3C32CB422818BC18007045EA /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
-		3CB571172816F7400038E482 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3CB571172816F7400038E482 /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		3CD6502B281A7D0B0033927F /* BookmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkController.swift; sourceTree = "<group>"; };
 		3CD6502F281A7F220033927F /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		3CD65039281A84D00033927F /* SimpleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStorage.swift; sourceTree = "<group>"; };
@@ -93,6 +94,7 @@
 		3CD65049281AAEB50033927F /* MockBookmarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookmarkStore.swift; sourceTree = "<group>"; };
 		3CD6504C281AB0C10033927F /* MockBookmarkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookmarkFactory.swift; sourceTree = "<group>"; };
 		3CD6504E281ACE990033927F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		3CD65052281ADBB90033927F /* NavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */,
 				3CD6503B281A86270033927F /* JSONStorage.swift */,
 				3CD65039281A84D00033927F /* SimpleStorage.swift */,
+				3CD65052281ADBB90033927F /* NavigationControllerExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -211,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				3CD6504E281ACE990033927F /* LaunchViewController.swift */,
-				3CB571172816F7400038E482 /* NavigationViewController.swift */,
+				3CB571172816F7400038E482 /* MainNavigationViewController.swift */,
 				3C08F4292819C1DA00FB7DAA /* PageViewController.swift */,
 				3C08F4252819BFB600FB7DAA /* WebViewController.swift */,
 				3C32CB422818BC18007045EA /* WebViewFactory.swift */,
@@ -365,8 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */,
+				3CB571182816F7400038E482 /* MainNavigationViewController.swift in Sources */,
 				3CD6504F281ACE990033927F /* LaunchViewController.swift in Sources */,
+				3CD65053281ADBB90033927F /* NavigationControllerExtension.swift in Sources */,
 				3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */,
 				3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */,
 				3CD6503C281A86270033927F /* JSONStorage.swift in Sources */,

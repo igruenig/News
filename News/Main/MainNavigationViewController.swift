@@ -1,5 +1,5 @@
 //
-//  NavigationViewController.swift
+//  MainNavigationViewController.swift
 //  News
 //
 //  Created by Ian Grünig on 25.04.22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationViewController: UINavigationController {
+class MainNavigationViewController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
