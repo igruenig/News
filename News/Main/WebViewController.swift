@@ -12,6 +12,8 @@ class WebViewController: UIViewController {
     
     var webView: WKWebView!
     
+    private var bookmarkController: BookmarkController<JSONStorage<Bookmark>>!
+    
     /// The initial url. This might be different then the currently displayed url.
     private(set) public var startURL: URL?
     
@@ -23,6 +25,11 @@ class WebViewController: UIViewController {
         webView.backgroundColor = .white
         
         view = webView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bookmarkController = (UIApplication.shared.delegate as! AppDelegate).bookmarkController
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -40,8 +47,47 @@ class WebViewController: UIViewController {
         startURL = url
     }
     
-    @objc func bookmarkPost(_ sender: Any) {
-        
+    @objc func bookmarkPressed(_ sender: Any) {
+        if let url = webView.url, let title = webView.title {
+            if bookmarkController.isBookmarked(url.absoluteString) {
+               removeBookmark(url)
+            } else {
+               saveBookmark(url, title: title)
+            }
+            updateNavigationBar()
+        }
+    }
+    
+    @objc func homePressed(_ sender: Any) {
+        if startURL != nil {
+            loadURL(startURL!)
+        }
+    }
+    
+    @objc func readingListPressed(_ sender: Any) {
+        // TODO: Show reading list instead of bookmarks
+        let vc = ViewControllerFactory.makeViewController(identifier: "BookmarksNavigationController") as! UINavigationController
+        navigationController?.present(vc, animated: true)
+    }
+    
+    private func removeBookmark(_ url: URL) {
+        if bookmarkController.remove(url.absoluteString){
+            // TODO: Show visual confirmation to user
+            print("bookmark removed")
+        } else {
+            // TODO: Show error to user
+            print("error removing bookmark")
+        }
+    }
+    
+    private func saveBookmark(_ url: URL, title: String) {
+        if bookmarkController.add(url, title: title) {
+            // TODO: Show visual confirmation to user
+            print("bookmark added")
+        } else {
+            // TODO: Show error to user
+            print("error adding bookmark")
+        }
     }
     
     private func updateWebViewAppearance() {
@@ -54,9 +100,25 @@ class WebViewController: UIViewController {
     
     private func updateNavigationBar() {
         if let url = webView.url, url.pathComponents.count > 2, url.pathComponents[2] != "tags" {
-            let bookmarkButton = UIBarButtonItem(image: UIImage(systemName: "bookmark"), style: .plain, target: self, action: #selector(bookmarkPost(_:)))
+            // home button
+            let tagHomeButton = UIBarButtonItem(image: UIImage(systemName: "house"), style: .plain, target: self, action: #selector(homePressed(_:)))
+            tagHomeButton.tintColor = .label
+            
+            // bookmark button
+            var systemName = "bookmark"
+            if bookmarkController.isBookmarked(url.absoluteString) {
+                systemName = "bookmark.fill"
+            }
+            
+            let bookmarkButton = UIBarButtonItem(image: UIImage(systemName: systemName), style: .plain, target: self, action: #selector(bookmarkPressed(_:)))
             bookmarkButton.tintColor = .label
-            parent?.navigationItem.leftBarButtonItem = bookmarkButton
+            
+            parent?.navigationItem.leftBarButtonItems = [tagHomeButton, bookmarkButton]
+        } else {
+            let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: self, action: #selector(readingListPressed(_:)))
+            readingListButton.tintColor = .label
+            
+            parent?.navigationItem.leftBarButtonItems = [readingListButton]
         }
     }
 }

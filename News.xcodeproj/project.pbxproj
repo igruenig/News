@@ -23,13 +23,19 @@
 		3C08F42C2819E32000FB7DAA /* WebViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F42B2819E32000FB7DAA /* WebViewControllerFactory.swift */; };
 		3C08F4322819FBB600FB7DAA /* enableDarkMode.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C08F4312819FBB600FB7DAA /* enableDarkMode.js */; };
 		3C08F434281A098900FB7DAA /* disableDarkMode.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C08F433281A098900FB7DAA /* disableDarkMode.js */; };
-		3C08F436281A14DB00FB7DAA /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */; };
-		3C08F43A281A182500FB7DAA /* ProfileNavigationControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */; };
 		3C08F43C281A195200FB7DAA /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */; };
 		3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */; };
 		3C32CB3A2818B7D7007045EA /* restyle.js in Resources */ = {isa = PBXBuildFile; fileRef = 3C32CB392818B7D7007045EA /* restyle.js */; };
 		3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C32CB422818BC18007045EA /* WebViewFactory.swift */; };
 		3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB571172816F7400038E482 /* NavigationViewController.swift */; };
+		3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502B281A7D0B0033927F /* BookmarkController.swift */; };
+		3CD6502E281A7D470033927F /* BookmarkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502D281A7D470033927F /* BookmarkRepository.swift */; };
+		3CD65030281A7F220033927F /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502F281A7F220033927F /* Bookmark.swift */; };
+		3CD6503A281A84D00033927F /* SimpleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65039281A84D00033927F /* SimpleStorage.swift */; };
+		3CD6503C281A86270033927F /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503B281A86270033927F /* JSONStorage.swift */; };
+		3CD6503E281A8FDA0033927F /* BookmarkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */; };
+		3CD65040281A92220033927F /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503F281A92220033927F /* BookmarksTableViewController.swift */; };
+		3CD65042281AA2BC0033927F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +75,19 @@
 		3C08F42B2819E32000FB7DAA /* WebViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerFactory.swift; sourceTree = "<group>"; };
 		3C08F4312819FBB600FB7DAA /* enableDarkMode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = enableDarkMode.js; sourceTree = "<group>"; };
 		3C08F433281A098900FB7DAA /* disableDarkMode.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = disableDarkMode.js; sourceTree = "<group>"; };
-		3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
-		3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationControllerFactory.swift; sourceTree = "<group>"; };
 		3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 		3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		3C32CB392818B7D7007045EA /* restyle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = restyle.js; sourceTree = "<group>"; };
 		3C32CB422818BC18007045EA /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
 		3CB571172816F7400038E482 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3CD6502B281A7D0B0033927F /* BookmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkController.swift; sourceTree = "<group>"; };
+		3CD6502D281A7D470033927F /* BookmarkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepository.swift; sourceTree = "<group>"; };
+		3CD6502F281A7F220033927F /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		3CD65039281A84D00033927F /* SimpleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStorage.swift; sourceTree = "<group>"; };
+		3CD6503B281A86270033927F /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
+		3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkStorage.swift; sourceTree = "<group>"; };
+		3CD6503F281A92220033927F /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +170,9 @@
 		3C08F437281A14E000FB7DAA /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3C08F435281A14DB00FB7DAA /* PostTableViewController.swift */,
+				3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */,
+				3CD6503B281A86270033927F /* JSONStorage.swift */,
+				3CD65039281A84D00033927F /* SimpleStorage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,7 +180,6 @@
 		3C08F438281A17FD00FB7DAA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				3C08F439281A182500FB7DAA /* ProfileNavigationControllerFactory.swift */,
 				3C08F43B281A195200FB7DAA /* ProfileNavigationController.swift */,
 				3C08F43D281A1A2400FB7DAA /* ProfileTableViewController.swift */,
 			);
@@ -203,6 +216,11 @@
 		3CD6502A281A7BEB0033927F /* Bookmarks */ = {
 			isa = PBXGroup;
 			children = (
+				3CD6503F281A92220033927F /* BookmarksTableViewController.swift */,
+				3CD6502B281A7D0B0033927F /* BookmarkController.swift */,
+				3CD6502D281A7D470033927F /* BookmarkRepository.swift */,
+				3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */,
+				3CD6502F281A7F220033927F /* Bookmark.swift */,
 			);
 			path = Bookmarks;
 			sourceTree = "<group>";
@@ -344,16 +362,22 @@
 				3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */,
 				3C08F41F28197D3000FB7DAA /* AppConstants.swift in Sources */,
 				3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */,
+				3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */,
+				3CD6503C281A86270033927F /* JSONStorage.swift in Sources */,
 				3C08A6FD28121BF5008FF1C6 /* AppDelegate.swift in Sources */,
+				3CD65042281AA2BC0033927F /* ViewControllerFactory.swift in Sources */,
 				3C08A6FF28121BF5008FF1C6 /* SceneDelegate.swift in Sources */,
-				3C08F436281A14DB00FB7DAA /* PostTableViewController.swift in Sources */,
 				3C08F42C2819E32000FB7DAA /* WebViewControllerFactory.swift in Sources */,
 				3C08F43C281A195200FB7DAA /* ProfileNavigationController.swift in Sources */,
 				3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */,
+				3CD6503E281A8FDA0033927F /* BookmarkStorage.swift in Sources */,
 				3C08F42A2819C1DA00FB7DAA /* PageViewController.swift in Sources */,
 				3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */,
-				3C08F43A281A182500FB7DAA /* ProfileNavigationControllerFactory.swift in Sources */,
+				3CD65040281A92220033927F /* BookmarksTableViewController.swift in Sources */,
+				3CD6503A281A84D00033927F /* SimpleStorage.swift in Sources */,
 				3C08F4262819BFB600FB7DAA /* WebViewController.swift in Sources */,
+				3CD6502E281A7D470033927F /* BookmarkRepository.swift in Sources */,
+				3CD65030281A7F220033927F /* Bookmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

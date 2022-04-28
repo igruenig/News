@@ -18,12 +18,8 @@ class PageViewController: UIPageViewController {
         setup()
     }
     
-    @objc func showReadingList(_ sender: Any) {
-        
-    }
-    
     @objc func showProfileMenu(_ sender: Any) {
-        let vc = ProfileNavigationControllerFactory.makeProfileNavigationViewController()
+        let vc = ViewControllerFactory.makeViewController(identifier: "ProfileNavigationController") as! ProfileNavigationController
         navigationController?.present(vc, animated: true)
     }
     
@@ -38,14 +34,14 @@ class PageViewController: UIPageViewController {
     private func setupNavigationBar() {
         title = webViewControllers[0].title
         
-        let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: self, action: #selector(showReadingList(_:)))
-        readingListButton.tintColor = .label
-        
         let profileButton = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(showProfileMenu(_:)))
         profileButton.tintColor = .label
         
-        navigationItem.leftBarButtonItem = readingListButton
         navigationItem.rightBarButtonItems = [profileButton]
+        
+        let readingListButton = UIBarButtonItem(image: UIImage(systemName: "eyeglasses"), style: .plain, target: nil, action: nil)
+        readingListButton.tintColor = .label
+        navigationItem.leftBarButtonItems = [readingListButton]
     }
 }
 
