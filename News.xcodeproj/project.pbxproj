@@ -14,7 +14,6 @@
 		3C08A70928121BF6008FF1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C08A70728121BF6008FF1C6 /* LaunchScreen.storyboard */; };
 		3C08A71E28121BF7008FF1C6 /* NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A71D28121BF7008FF1C6 /* NewsUITests.swift */; };
 		3C08A72028121BF7008FF1C6 /* NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08A71F28121BF7008FF1C6 /* NewsUITestsLaunchTests.swift */; };
-		3C08F41F28197D3000FB7DAA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F41E28197D3000FB7DAA /* AppConstants.swift */; };
 		3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4202819806100FB7DAA /* WebRoutes.swift */; };
 		3C08F423281986ED00FB7DAA /* WebRoutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */; };
 		3C08F4242819880400FB7DAA /* WebRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C08F4202819806100FB7DAA /* WebRoutes.swift */; };
@@ -71,7 +70,6 @@
 		3C08A71928121BF7008FF1C6 /* NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C08A71D28121BF7008FF1C6 /* NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITests.swift; sourceTree = "<group>"; };
 		3C08A71F28121BF7008FF1C6 /* NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3C08F41E28197D3000FB7DAA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		3C08F4202819806100FB7DAA /* WebRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRoutes.swift; sourceTree = "<group>"; };
 		3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRoutesTests.swift; sourceTree = "<group>"; };
 		3C08F4252819BFB600FB7DAA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 			children = (
 				3C08A6FC28121BF5008FF1C6 /* AppDelegate.swift */,
 				3C08A6FE28121BF5008FF1C6 /* SceneDelegate.swift */,
-				3C08F41E28197D3000FB7DAA /* AppConstants.swift */,
 				3C2C8AA52818B1510040F604 /* Main */,
 				3C08F438281A17FD00FB7DAA /* Profile */,
 				3CD6502A281A7BEB0033927F /* Bookmarks */,
@@ -366,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */,
-				3C08F41F28197D3000FB7DAA /* AppConstants.swift in Sources */,
 				3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */,
 				3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */,
 				3CD6503C281A86270033927F /* JSONStorage.swift in Sources */,
