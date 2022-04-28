@@ -131,6 +131,7 @@
 				3C08F41E28197D3000FB7DAA /* AppConstants.swift */,
 				3C2C8AA52818B1510040F604 /* Main */,
 				3C08F438281A17FD00FB7DAA /* Profile */,
+				3CD6502A281A7BEB0033927F /* Bookmarks */,
 				3C08F437281A14E000FB7DAA /* Common */,
 				3C2C8AA42818B12A0040F604 /* Resources */,
 			);
@@ -197,6 +198,13 @@
 				3C08F4202819806100FB7DAA /* WebRoutes.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		3CD6502A281A7BEB0033927F /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bookmarks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

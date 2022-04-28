@@ -11,7 +11,9 @@ import WebKit
 class WebViewController: UIViewController {
     
     var webView: WKWebView!
-    var startURL: URL?
+    
+    /// The initial url. This might be different then the currently displayed url.
+    private(set) public var startURL: URL?
     
     override func loadView() {
         webView = WebViewFactory.makeWebView(injectScripts: ["restyle"])
@@ -23,15 +25,19 @@ class WebViewController: UIViewController {
         view = webView
     }
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        updateWebViewAppearance()
+    }
+    
+    /**
+     Loads a url in a web view and keeps a reference to the url. The web view is created for you if it has not been loaded yet.
+     - Parameter url: The url loaded in the web view.
+     */
     func loadURL(_ url: URL) {
         loadViewIfNeeded()
         webView.load(URLRequest(url: url))
         startURL = url
-    }
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        updateWebViewAppearance()
     }
     
     @objc func bookmarkPost(_ sender: Any) {
