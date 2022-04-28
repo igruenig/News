@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,23 +11,22 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3sS-B6-Sma">
-                                <rect key="frame" x="67" y="313" width="280" height="280"/>
+                                <rect key="frame" x="67" y="308" width="280" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="Plr-o6-Ln3"/>
                                     <constraint firstAttribute="width" constant="280" id="ivS-ZQ-iRC"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3sS-B6-Sma" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ayu-Di-NKU"/>
-                            <constraint firstItem="3sS-B6-Sma" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="uwe-ux-lEl"/>
+                            <constraint firstItem="3sS-B6-Sma" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ayu-Di-NKU"/>
+                            <constraint firstItem="3sS-B6-Sma" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uwe-ux-lEl"/>
                         </constraints>
                     </view>
                 </viewController>

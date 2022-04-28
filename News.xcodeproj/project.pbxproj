@@ -39,6 +39,7 @@
 		3CD6504A281AAEB50033927F /* MockBookmarkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65049281AAEB50033927F /* MockBookmarkStore.swift */; };
 		3CD6504B281AAED20033927F /* SimpleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65039281A84D00033927F /* SimpleStorage.swift */; };
 		3CD6504D281AB0C10033927F /* MockBookmarkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6504C281AB0C10033927F /* MockBookmarkFactory.swift */; };
+		3CD6504F281ACE990033927F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6504E281ACE990033927F /* LaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		3CD65043281AAC410033927F /* BookmarkControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkControllerTests.swift; sourceTree = "<group>"; };
 		3CD65049281AAEB50033927F /* MockBookmarkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookmarkStore.swift; sourceTree = "<group>"; };
 		3CD6504C281AB0C10033927F /* MockBookmarkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBookmarkFactory.swift; sourceTree = "<group>"; };
+		3CD6504E281ACE990033927F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		3C2C8AA52818B1510040F604 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3CD6504E281ACE990033927F /* LaunchViewController.swift */,
 				3CB571172816F7400038E482 /* NavigationViewController.swift */,
 				3C08F4292819C1DA00FB7DAA /* PageViewController.swift */,
 				3C08F4252819BFB600FB7DAA /* WebViewController.swift */,
@@ -363,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */,
+				3CD6504F281ACE990033927F /* LaunchViewController.swift in Sources */,
 				3C08F4212819806100FB7DAA /* WebRoutes.swift in Sources */,
 				3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */,
 				3CD6503C281A86270033927F /* JSONStorage.swift in Sources */,
