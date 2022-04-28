@@ -29,13 +29,14 @@
 		3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C32CB422818BC18007045EA /* WebViewFactory.swift */; };
 		3CB571182816F7400038E482 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB571172816F7400038E482 /* NavigationViewController.swift */; };
 		3CD6502C281A7D0B0033927F /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502B281A7D0B0033927F /* BookmarkController.swift */; };
-		3CD6502E281A7D470033927F /* BookmarkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502D281A7D470033927F /* BookmarkRepository.swift */; };
 		3CD65030281A7F220033927F /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502F281A7F220033927F /* Bookmark.swift */; };
 		3CD6503A281A84D00033927F /* SimpleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65039281A84D00033927F /* SimpleStorage.swift */; };
 		3CD6503C281A86270033927F /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503B281A86270033927F /* JSONStorage.swift */; };
-		3CD6503E281A8FDA0033927F /* BookmarkStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */; };
 		3CD65040281A92220033927F /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6503F281A92220033927F /* BookmarksTableViewController.swift */; };
 		3CD65042281AA2BC0033927F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */; };
+		3CD65044281AAC410033927F /* BookmarkControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD65043281AAC410033927F /* BookmarkControllerTests.swift */; };
+		3CD65045281AAD050033927F /* BookmarkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502B281A7D0B0033927F /* BookmarkController.swift */; };
+		3CD65046281AAD090033927F /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD6502F281A7F220033927F /* Bookmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,13 +82,12 @@
 		3C32CB422818BC18007045EA /* WebViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewFactory.swift; sourceTree = "<group>"; };
 		3CB571172816F7400038E482 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		3CD6502B281A7D0B0033927F /* BookmarkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkController.swift; sourceTree = "<group>"; };
-		3CD6502D281A7D470033927F /* BookmarkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkRepository.swift; sourceTree = "<group>"; };
 		3CD6502F281A7F220033927F /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		3CD65039281A84D00033927F /* SimpleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStorage.swift; sourceTree = "<group>"; };
 		3CD6503B281A86270033927F /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
-		3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkStorage.swift; sourceTree = "<group>"; };
 		3CD6503F281A92220033927F /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		3CD65041281AA2BC0033927F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		3CD65043281AAC410033927F /* BookmarkControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				3C08F422281986ED00FB7DAA /* WebRoutesTests.swift */,
+				3CD65043281AAC410033927F /* BookmarkControllerTests.swift */,
 			);
 			path = NewsTests;
 			sourceTree = "<group>";
@@ -218,8 +219,6 @@
 			children = (
 				3CD6503F281A92220033927F /* BookmarksTableViewController.swift */,
 				3CD6502B281A7D0B0033927F /* BookmarkController.swift */,
-				3CD6502D281A7D470033927F /* BookmarkRepository.swift */,
-				3CD6503D281A8FDA0033927F /* BookmarkStorage.swift */,
 				3CD6502F281A7F220033927F /* Bookmark.swift */,
 			);
 			path = Bookmarks;
@@ -370,13 +369,11 @@
 				3C08F42C2819E32000FB7DAA /* WebViewControllerFactory.swift in Sources */,
 				3C08F43C281A195200FB7DAA /* ProfileNavigationController.swift in Sources */,
 				3C08F43E281A1A2400FB7DAA /* ProfileTableViewController.swift in Sources */,
-				3CD6503E281A8FDA0033927F /* BookmarkStorage.swift in Sources */,
 				3C08F42A2819C1DA00FB7DAA /* PageViewController.swift in Sources */,
 				3C32CB432818BC18007045EA /* WebViewFactory.swift in Sources */,
 				3CD65040281A92220033927F /* BookmarksTableViewController.swift in Sources */,
 				3CD6503A281A84D00033927F /* SimpleStorage.swift in Sources */,
 				3C08F4262819BFB600FB7DAA /* WebViewController.swift in Sources */,
-				3CD6502E281A7D470033927F /* BookmarkRepository.swift in Sources */,
 				3CD65030281A7F220033927F /* Bookmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD65046281AAD090033927F /* Bookmark.swift in Sources */,
 				3C08F4242819880400FB7DAA /* WebRoutes.swift in Sources */,
+				3CD65045281AAD050033927F /* BookmarkController.swift in Sources */,
 				3C08F423281986ED00FB7DAA /* WebRoutesTests.swift in Sources */,
+				3CD65044281AAC410033927F /* BookmarkControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
