@@ -123,7 +123,7 @@ class BookmarkControllerTests: XCTestCase {
         let bookmarkStore = MockBookmarkStore()
         bookmarkStore.bookmarks = []
         
-        for _ in repeatElement((), count: numberOfBookmarks) {
+        for _ in 0..<numberOfBookmarks {
             bookmarkStore.bookmarks?.append(MockBookmarkFactory.randomBookmark())
         }
         
