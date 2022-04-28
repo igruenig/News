@@ -11,7 +11,7 @@ import WebKit
 class WebViewController: UIViewController {
     
     var webView: WKWebView!
-    var currentURL: URL?
+    var startURL: URL?
     
     override func loadView() {
         webView = WebViewFactory.makeWebView(injectScripts: ["restyle"])
@@ -26,7 +26,7 @@ class WebViewController: UIViewController {
     func loadURL(_ url: URL) {
         loadViewIfNeeded()
         webView.load(URLRequest(url: url))
-        currentURL = url
+        startURL = url
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
